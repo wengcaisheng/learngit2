@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+      <!-- 标题栏 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:background="@color/white">
+        <RelativeLayout 
+            android:layout_width="wrap_content"
+            android:background="@drawable/selector_gray"
+            android:layout_height="48dip"
+            android:id="@+id/relativelayout_back"
+            android:paddingRight="10dp">
+            <ImageView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_back"
+                android:layout_centerVertical="true"
+                android:id="@+id/img_back"/>
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_takeaway"
+                android:textColor="@color/title_color"
+                android:textSize="20sp"
+                android:layout_toRightOf="@id/img_back"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View 
+            android:layout_width="match_parent"
+            android:layout_height="0.1dip"
+            android:background="@color/line"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

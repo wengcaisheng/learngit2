@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">花果山</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="splash_start">开始体验</string>
+    <string name="btn_home">首页</string>
+    <string name="btn_pay">买单</string>
+    <string name="btn_Historybussinesslist">历史店家</string>
+    <string name="btn_my">我的</string>
+    <string name="search">输入商户名、公司名、团名</string>
+    <string name="defualt_city">上海</string>
+    <string name="activity_city">定位城市</string>
+    <string name="activity_pay">我要买单</string>
+    <string name="activity_takeaway">外卖店家</string>
+    <string name="activity_bussiness">历史店家</string>
+    <string name="login">点击登录</string>
+</resources>

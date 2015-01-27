@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <fragment
+        android:id="@+id/farment_main"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        class="com.hgs.ui.MainFragment" />
+
+    <fragment
+        android:id="@+id/farment_search"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        class="com.hgs.ui.HistroyBussinessListFragment" />
+    
+    <fragment
+        android:id="@+id/farment_order"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        class="com.hgs.ui.PayFragment" />
+
+    <fragment
+        android:id="@+id/farment_my"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        class="com.hgs.ui.MyFragment" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/shape_radio_group_back" >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal" 
+            android:checkedButton="@+id/btn_home">
+
+            <RadioButton
+                android:id="@+id/btn_home"
+                android:textSize="12.0sp" 
+                android:textColor="@color/color_radiobutton"  
+                android:paddingTop="3.0dip" 
+                android:paddingBottom="3.0dip"   
+                android:layout_height="fill_parent" 
+                android:text="@string/btn_home" 
+                android:button="@null" 
+                android:gravity="center_horizontal"  
+                android:drawableTop="@drawable/selector_radio_main" 
+                android:layout_weight="1"
+                android:onClick="mainClick"/>
+            
+             <RadioButton
+                android:textSize="12.0sp" 
+                android:textColor="@color/color_radiobutton" 
+                android:paddingTop="3.0dip" 
+                android:paddingBottom="3.0dip"  
+                android:layout_height="fill_parent" 
+                android:text="@string/btn_Historybussinesslist" 
+                android:button="@null" 
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/selector_radio_search"
+                android:onClick="phoneClick" />
+            
+            <RadioButton
+                android:textSize="12.0sp" 
+                android:textColor="@color/color_radiobutton"  
+                android:paddingTop="3.0dip" 
+                android:paddingBottom="3.0dip"  
+                android:layout_height="fill_parent" 
+                android:text="@string/btn_pay" 
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_radio_order"
+                android:onClick="accessoryClick" />
+
+            <RadioButton
+                android:textSize="12.0sp" 
+                android:textColor="@color/color_radiobutton"  
+                android:paddingTop="3.0dip" 
+                android:paddingBottom="3.0dip"  
+                android:layout_height="fill_parent" 
+                android:text="@string/btn_my" 
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+                android:button="@null"
+                android:drawableTop="@drawable/selector_radio_my"
+                android:onClick="cartClick" />
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>
