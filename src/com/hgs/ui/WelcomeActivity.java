@@ -23,6 +23,7 @@ public class WelcomeActivity extends Activity implements Runnable{
     private ImageView       mImageView;
     private ViewPager       mViewPager;
 	private ArrayList<View> mViews;
+        Private int test=10;
 	private SplashAdapter   mVpAdapter;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
